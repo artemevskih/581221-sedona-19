@@ -39,8 +39,87 @@
       <h1 class="main__title">Оставьте свой отзыв</h1>
       <p class="main__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
-    <form action="https://echo.htmlacademy.ru" class="main__form" method="POST">
-
+    <form action="https://echo.htmlacademy.ru" class="main__form form" method="POST">
+      <fieldset class="form__fieldset form__fieldset--name fieldset">
+        <legend class="fieldset__legend">
+          <span>Представьтесь:</span>
+        </legend>
+        <ul class="fieldset__list fieldset__list--name">
+          <li class="fieldset__item fieldset__item--fullname field">
+            <label class="field__label" for="name">Имя*:</label>
+            <input class="field__input" type="text" id="name" placeholder="Петр" required>
+          </li>
+          <li class="fieldset__list fieldset__list--fullname">
+            <label class="field__label" for="surname">Фамилия*:</label>
+            <input class="field__input" type="text" id="surname" placeholder="Иванов" required>
+          </li>
+          <li class="fieldset__list fieldset__list--fullname">
+            <label class="field__label" for="patronymic">Отчество*:</label>
+            <input class="field__input" type="text" id="patronymic" placeholder="Александрович" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__fieldset form__fieldset--contacts fieldset">
+        <legend class="fieldset__legend">
+          <span>Контактная информация:</span>
+        </legend>
+        <ul class="fieldset__list fieldset__list--contacts">
+          <li class="fieldset__item field">
+            <label class="field__label" for="phone">Контактный телефон*:</label>
+            <input class="field__input" id="phone" type="tel" placeholder="Введите телефон" required/>
+          </li>
+          <li class="fieldset__item field">
+            <label class="field__label" for="email">Электронная почта*:</label>
+            <input class="field__input" id="email" type="tel" placeholder="Введите e-mail" required/>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__fieldset form__fieldset--radio fieldset">
+        <legend class="fieldset__legend">
+          <span>ВАше Общее впечатление:</span>
+        </legend>
+        <ul class="fieldset__list fieldset__list--radio">
+          <li class="fieldset__item field">
+            <input class="field__input field__input--radio" id="impression-possitive" name="impression" type="radio" checked>
+            <label for="impression-possitive">Скорее положительное</label>
+          </li>
+          <li class="fieldset__item field">
+            <input class="field__input field__input--radio" id="impression-negative" name="impression" type="radio" checked>
+            <label for="impression-negative">Скорее отрицательное</label>
+          </li>
+          <li class="fieldset__item field">
+            <input class="field__input field__input--radio" id="impression-neutral" name="impression" type="radio" checked>
+            <label for="impression-neutral">Затрудняюсь ответить</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__fieldset form__fieldset--radio fieldset">
+        <legend class="fieldset__legend">посещенные достопримечательности:</legend>
+        <ul class="fieldset__list fieldset__list--checklist">
+          <li class="fieldset__item field">
+            <input class="field__input field__input--checklist" type="checkbox" name="lions" id="bridge">
+            <label class="field__label" for="bridge">Мост Дьявола</label>
+          </li>
+          <li class="fieldset__item field">
+            <input class="field__input field__input--checklist" type="checkbox" name="lions" id="mountain">
+            <label class="field__label" for="mountain">Гора-Колокол</label>
+          </li>
+          <li class="fieldset__item field">
+            <input class="field__input field__input--checklist" type="checkbox" name="lions" id="park">
+            <label class="field__label" for="park">Слайд-парк</label>
+          </li>
+          <li class="fieldset__item field">
+            <input class="field__input field__input--checklist" type="checkbox" name="lions" id="rocks">
+            <label class="field__label" for="rocks">Красные скалы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__fieldset form__fieldset--textarea fieldset">
+        <legend class="fieldset__legend">Опишите свои эмоции:</legend>
+        <label class="visually-hidden" for="text">Опишите ваши эмоции</label>
+        <textarea name="text" id="text" placeholder="Опишите подробно все свои восторги "></textarea>
+      </fieldset>
+      <button class="form__submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
     </form>
   </main>
   <footer class="page__footer footer">

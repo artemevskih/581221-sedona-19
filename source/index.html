@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona - лучшее место для туризма и активного отдыха.</title>
   <link rel="icon" type="image/png" href="img/favicon-16x16.png">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
@@ -20,16 +20,16 @@
         </picture>
       </a>
       <ul class="nav__list page__list">
-        <li class="nav__item"><a class="button nav__link">Главная</a></li>
-        <li class="nav__item"><a href="photo.html" class="button nav__link">Фото и видео</a></li>
-        <li class="nav__item"><a href="form.html" class="button nav__link">Форма отзыва</a></li>
-        <li class="nav__item"><a href="" class="button nav__link">HTML Academy</a></li>
+        <li class="nav__item"><a class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="photo.html" class="nav__link">Фото и видео</a></li>
+        <li class="nav__item"><a href="form.html" class="nav__link">Форма отзыва</a></li>
+        <li class="nav__item"><a href="" class="nav__link">HTML Academy</a></li>
       </ul>
       <button class="nav__toggle">
         <span class="visually-hidden">Открыть или закрыть меню</span>
       </button>
     </nav>
-    <section class="intro intro--index">
+    <section class="header__intro intro intro--index">
       <img class="intro__img intro__img--index" src="img/text-sedona-index.svg" width="280" height="213" alt="Эмблема Седоны">
       <h1 class="visually-hidden">Sedona</h1>
     </section>
@@ -39,57 +39,65 @@
       <h2 class="visually-hidden">Преимущества Седоны</h2>
       <b class="benefits__title">Седона – небольшой городок в Аризоне, заслуживающий большего!</b>
       <p class="benefits__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <ol class="benefits__list">
+      <ol class="benefits__list page__list">
         <li class="benefits__item benefits__item--large">
-          <div class="benefits__content">
-            <b class="benefits__caption">Настоящий городок</b>
+          <div class="benefits__content benefits__content--large">
+            <b class="benefits__caption benefits__caption--bold">Настоящий городок</b>
             <p class="benefits__desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <picture class="picture benefits__img">
             <img class="picture__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото города">
           </picture>
-          <ul class="benefits__features features">
+          <ul class="benefits__features features page__list">
             <li class="features__item">
-                 <b class="features__caption">жилье</b>
-                 <p class="features__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-               </li>
-               <li class="features__item">
-                 <b class="features__caption">сувениры</b>
-                 <p class="features__desc">Не только китайского, но и местного производства!</p>
-               </li>
-               <li class="features__item">
-                 <b class="features__caption">еда</b>
-                 <p class="features__desc">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-               </li>
+              <b class="features__caption">жилье</b>
+              <p class="features__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="features__item">
+              <b class="features__caption">сувениры</b>
+              <p class="features__desc">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="features__item">
+              <b class="features__caption">еда</b>
+              <p class="features__desc">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+            </li>
           </ul>
         </li>
         <li class="benefits__item benefits__item--large">
-          <div class="benefits__content">
+          <div class="benefits__content benefits__content--large">
             <b class="benefits__caption">ТАМ ЕСТЬ Мост дьявола</b>
             <p class="benefits__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <picture class="picture advantages__picture advantages__picture--even">
+          <picture class="picture benefits__img">
             <img class="picture__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
           </picture>
         </li>
         <li class="benefits__item">
-          <b class="benefits__caption">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
-          <p class="benefits__desc">ВСЕ интересные места находятся очень близко</p>
+          <div class="benefits__content">
+            <b class="benefits__caption">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+            <p class="benefits__desc">ВСЕ интересные места находятся очень близко</p>
+          </div>
         </li>
         <li class="benefits__item">
-          <b class="benefits__caption">КРАСИВАЯ ДОРОГА</b>
-          <p class="benefits__desc">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          <div class="benefits__content">
+            <b class="benefits__caption">КРАСИВАЯ ДОРОГА</b>
+            <p class="benefits__desc">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          </div>
         </li>
         <li class="benefits__item">
-          <b class="benefits__caption">МАЛО ТУРИСТОВ</b>
-          <p class="benefits__desc">Большинство едет в гранд каньон и толпится там</p>
+          <div class="benefits__content">
+            <b class="benefits__caption">МАЛО ТУРИСТОВ</b>
+            <p class="benefits__desc">Большинство едет в гранд каньон и толпится там</p>
+          </div>
         </li>
       </ol>
     </section>
     <section class="main__search search">
       <b class="search__caption">ЗАИНТЕРЕСОВАЛИСЬ?</b>
       <p class="search__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a class="search__link" href="#">Найти гостиницу</a>
+      <a class="search__link" href="#">
+        <b>Найти гостиницу</b>
+      </a>
     </section>
     <section class="main__map map"></section>
   </main>

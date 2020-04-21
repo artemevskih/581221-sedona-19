@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+}
+
+.nav__logo {
+  text-align: center;
+  order: 5;
+}
+
+.nav__item {
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.nav__link {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2.22;
+  color: #ffffff;
+}
+
+.nav__toggle {
+  display: none;
+}

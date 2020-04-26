@@ -1,0 +1,36 @@
+.hotel-search {
+  text-align: center;
+  margin: 33px 0 0;
+}
+
+.hotel-search__caption {
+  font-size: $lg-font-size;
+  line-height: 1.23;
+}
+
+.hotel-search__desc {
+  color: $secondary-font-color;
+  font-size: $main-font-size;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.hotel-search__button {
+  background-color: $bg-color;
+  color: #ffffff;
+  display: block;
+  max-width: 280px;
+  font-size: $lg-font-size;
+  line-height: 1.23;
+  padding: 15px 0 17px;
+  margin: 0 auto 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel-search__button {
+    max-width: 458px;
+    font-size: 21px;
+  }
+}
+
+

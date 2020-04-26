@@ -1,0 +1,48 @@
+.control {
+  width: calc(100% - 2 * 20px);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  top: calc(100% - 45px);
+  left: 20px;
+  height: 111px;
+  background: linear-gradient(to bottom,
+    transparent,
+    transparent 45px,
+    #f2f2f2 45px,
+    #f2f2f2 100%);
+}
+
+.сontrol__item {
+  margin: 0 15px;
+
+
+  &--repeat {
+    margin-right: auto;
+  }
+
+  &--pin {
+    margin: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &--pin::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: calc(100% - 2 * 23px);
+    top: 50%;
+    left: 23px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.control__button {
+  cursor: pointer;
+}

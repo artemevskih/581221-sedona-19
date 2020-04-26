@@ -91,5 +91,21 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
   }
+
+  .photos__caption,
+  .photos__desc,
+  .photos__submit-button {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .photos__like-img {
+    opacity: 1;
+  }
+
+  .photos__like-img path {
+    fill: #ffffff;
+  }
 }
 

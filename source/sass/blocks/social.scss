@@ -17,7 +17,7 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     height: 20px;
@@ -30,14 +30,14 @@
   }
 
   &--icon_tw::before {
-    background-image: url('../../img/icon-twitter.svg');
+    background-image: url("../../img/icon-twitter.svg");
   }
 
   &--icon_fb::before {
-    background-image: url('../../img/icon-facebook.svg');
+    background-image: url("../../img/icon-facebook.svg");
   }
 
   &--icon_youtube::before {
-    background-image: url('../../img/icon-youtube.svg');
+    background-image: url("../../img/icon-youtube.svg");
   }
 }

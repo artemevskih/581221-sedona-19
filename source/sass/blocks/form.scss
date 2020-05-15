@@ -22,6 +22,32 @@
 
 .form__label {
   margin-right: 14px;
+  position: relative;
+  margin-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    display: block;
+    background-color: #f2f2f2;
+  }
+
+  &--radio {
+    &::before {
+      width: 16px;
+      height: 16px;
+      border: 15px solid #f2f2f2;
+      border-radius: 50%;
+    }
+  }
+
+  &--checkbox::before {
+    width: 46px;
+    height: 46px;
+  }
 }
 
 .form__input {
@@ -36,5 +62,21 @@
 
   &::placeholder {
     color: inherit;
+    font-weight: 700;
+  }
+
+  &--textarea {
+    resize: none;
+    box-sizing: border-box;
+  }
+
+  &--radio:checked ~ .form__label::before {
+    background-color: #333333;
+  }
+
+  &--checkbox:checked ~ .form__label::before {
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }

@@ -78,15 +78,15 @@
         </legend>
         <ul class="form__inputs-list form__inputs-list--radio">
           <li class="form__inputs-item form__inputs-item--radio">
-            <input class="visually-hidden" id="impression-positive" type="radio" name="impression" value="impression-positive" checked>
+            <input class="visually-hidden form__input--radio form__input--radio_positive" id="impression-positive" type="radio" name="impression" value="impression-positive" checked>
             <label class="form__label form__label--radio" for="impression-positive">Скорее положительное</label>
           </li>
           <li class="form__inputs-item form__inputs-item--radio">
-            <input class="visually-hidden" id="impression-negative" type="radio" name="impression" value="impression-negative">
+            <input class="visually-hidden form__input--radio form__input--radio_negative" id="impression-negative" type="radio" name="impression" value="impression-negative">
             <label class="form__label form__label--radio" for="impression-negative">Скорее отрицательное</label>
           </li>
           <li class="form__inputs-item form__inputs-item--radio">
-            <input class="visually-hidden" id="difficult-to-answer" type="radio" name="impression" value="difficult-to-answer">
+            <input class="visually-hidden form__input--radio" id="difficult-to-answer" type="radio" name="impression" value="difficult-to-answer">
             <label class="form__label form__label--radio" for="difficult-to-answer">Затрудняюсь ответить</label>
           </li>
         </ul>
@@ -97,19 +97,19 @@
         </legend>
         <ul class="form__inputs-list form__inputs-list--checkbox">
           <li class="form__inputs-item form__inputs-item--checkbox">
-            <input class="visually-hidden" id="bridge" type="checkbox" name="visited-places" value="bridge" checked>
+            <input class="visually-hidden form__input--checkbox" id="bridge" type="checkbox" name="visited-places" value="bridge" checked>
             <label class="form__label form__label--checkbox" for="bridge">Мост Дьявола</label>
           </li>
           <li class="form__inputs-item form__inputs-item--checkbox">
-            <input class="visually-hidden" id="mountain" type="checkbox" name="visited-places" value="mountain" checked>
+            <input class="visually-hidden form__input--checkbox" id="mountain" type="checkbox" name="visited-places" value="mountain" checked>
             <label class="form__label form__label--checkbox" for="mountain">Гора-Колокол</label>
           </li>
           <li class="form__inputs-item form__inputs-item--checkbox">
-            <input class="visually-hidden" id="park" type="checkbox" name="visited-places" value="park" checked>
+            <input class="visually-hidden form__input--checkbox" id="park" type="checkbox" name="visited-places" value="park" checked>
             <label class="form__label form__label--checkbox" for="park">Слайд-парк</label>
           </li>
           <li class="form__inputs-item form__inputs-item--checkbox">
-            <input class="visually-hidden" id="red-rocks" type="checkbox" name="visited-places" value="red-rocks">
+            <input class="visually-hidden form__input--checkbox" id="red-rocks" type="checkbox" name="visited-places" value="red-rocks">
             <label class="form__label form__label--checkbox" for="red-rocks">Красные скалы</label>
           </li>
         </ul>
@@ -118,7 +118,7 @@
         <legend class="form__legend form__legend--text">
           <b>Опишите свои эмоции:</b>
         </legend>
-        <textarea class="form__input form__input--textarea" id="text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+        <textarea class="form__input form__input--textarea" id="text" name="text" placeholder="Опишите подробно все свои восторги" cols="80" rows="4"></textarea>
       </fieldset>
       <button class="form__submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
     </form>

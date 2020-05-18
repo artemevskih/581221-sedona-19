@@ -23,15 +23,15 @@
   }
 
   &--hotel::before {
-    background-image: url('../../img/icon-house.svg');
+    background-image: url("../../img/icon-house.svg");
   }
 
   &--souvenirs::before {
-    background-image: url('../../img/icon-gift.svg');
+    background-image: url("../../img/icon-gift.svg");
   }
 
   &--food::before {
-    background-image: url('../../img/icon-burger.svg');
+    background-image: url("../../img/icon-burger.svg");
   }
 }
 

@@ -1,6 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 0 20px;
+}
+
 .form__fieldset {
   border: none;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .form__legend {
@@ -21,20 +30,23 @@
 }
 
 .form__label {
-  margin-right: 14px;
-  position: relative;
-  margin-left: 50px;
+  &--radio,
+  &--checkbox {
+    margin-right: 14px;
+    position: relative;
+    margin-left: 50px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -50px;
-    transform: translateY(-50%);
-    display: block;
-    width: 46px;
-    height: 46px;
-    background-color: #f2f2f2;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      transform: translateY(-50%);
+      display: block;
+      width: 46px;
+      height: 46px;
+      background-color: #f2f2f2;
+    }
   }
 
   &--radio {
@@ -69,9 +81,103 @@
     background-color: #333333;
   }
 
-  &--checkbox:checked ~ .form__label::before {
+  &--checkbox:checked ~ .form__label--checkbox::before {
     background-image: url("../../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+}
+
+.form__submit {
+  display: block;
+  width: 100%;
+  min-height: 58px;
+  background-color: #81b3d2;
+  order: 10;
+  color: #ffffff;
+  font-family: $bold-font;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    flex-direction: row;
+    margin: 0 60px;
+
+    &::after {
+      content: "* — обязательные поля";
+      display: block;
+      margin-left: auto;
+      order: 10;
+    }
+  }
+
+  .form__fieldset {
+    order: 10;
+    width: 50%;
+
+    &--radio {
+      order: 1;
+    }
+
+    &--contact {
+      width: 100%;
+    }
+
+    &--checkbox {
+      width: 100%;
+    }
+
+    &--text {
+      width: 100%;
+    }
+  }
+
+  .form__submit {
+    width: 50%;
+  }
+
+  .form__inputs-list {
+    &--checkbox {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .form__inputs-item {
+    &--checkbox {
+      width: 50%;
+    }
+  }
+
+  .form__label {
+    &--checkbox {
+      &:nth-child(odd) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    margin: 0 120px;
+  }
+
+  .form__inputs-list {
+    &--checkbox {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  .form__inputs-item {
+    &--checkbox {
+      width: auto;
+    }
   }
 }

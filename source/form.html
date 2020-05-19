@@ -44,16 +44,22 @@
         </legend>
         <ul class="form__inputs-list form__inputs-list--name">
           <li class="form__inputs-item form__inputs-item--name">
-            <label class="form__label form__label--name" for="name">Имя*:</label>
-            <input class="form__input form__input--name" id="name" type="text" name="name" placeholder="Петр" required>
+            <label class="form__label form__label--name" for="name">
+              <span>Имя*:</span>
+              <input class="form__input form__input--name" id="name" type="text" name="name" placeholder="Петр" required>
+            </label>
           </li>
           <li class="form__inputs-item form__inputs-item--name">
-            <label class="form__label form__label--name" for="surname">Фамилия*:</label>
-            <input class="form__input form__input--name" id="surname" type="text" name="surname" placeholder="Иванов" required>
+            <label class="form__label form__label--name" for="surname">
+              <span>Фамилия*:</span>
+              <input class="form__input form__input--name" id="surname" type="text" name="surname" placeholder="Иванов" required>
+            </label>
           </li>
           <li class="form__inputs-item form__inputs--name">
-            <label class="form__label form__label--name" for="patronymic">Отчество:</label>
-            <input class="form__input form__input--name" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+            <label class="form__label form__label--name" for="patronymic">
+              <span>Отчество:</span>
+              <input class="form__input form__input--name" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+            </label>
           </li>
         </ul>
       </fieldset>
@@ -63,12 +69,16 @@
         </legend>
         <ul class="form__inputs-list form__inputs-list--contact">
           <li class="form__inputs-item form__inputs-item--contact">
-            <label class="form__label form__label--contact" for="phone">Контактный телефон*:</label>
-            <input class="form__input form__input--contact" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
+            <label class="form__label form__label--contact form__label--contact_phone" for="phone">
+              <span><span class="no-desktop">Контактный </span>телефон*:</span>
+              <input class="form__input form__input--contact" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
+            </label>
           </li>
           <li class="form__inputs-item form__inputs-item--contact">
-            <label class="form__label form__label--contact" for="email">Электронная почта*:</label>
-            <input class="form__input form__input--contact" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+            <label class="form__label form__label--contact form__label--contact_mail" for="email">
+              <span>Электронная почта*:</span>
+              <input class="form__input form__input--contact" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+            </label>
           </li>
         </ul>
       </fieldset>

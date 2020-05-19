@@ -80,3 +80,10 @@ button {
   width: 100%;
   transform: translateY(-50%);
 }
+
+
+@media (min-width: $desktop-width) {
+  .no-desktop {
+    display: none;
+  }
+}
